@@ -1,0 +1,24 @@
+{
+    "name": "Authority",
+    "prefix": "authority",
+    "uri": "http://authority",
+    "xml": {
+      "tagAlias": "lowerCase"
+    },
+    "associations": [],
+    "types": [
+      {
+        "name": "LinDaiDaiStartEvent",
+        "extends": [
+          "bpmn:StartEvent"
+        ],
+        "properties": [
+          {
+            "name": "title",
+            "isAttr": true,
+            "type": "String"
+          }
+        ]
+      }
+    ]
+  }

@@ -2,11 +2,11 @@
 
 ## 项目描述
 
-此项目为[《全网最详bpmn.js教材-http请求篇》](https://juejin.im/post/5def468c6fb9a01622778a03)中的教材案例.
+此项目为[《全网最详bpmn.js教材-properties-panel篇(上)》](https://juejin.im/post/5e1adffbe51d45023129aef5)中的教材案例.
 
 项目截图:
 
-![img1](./public/image/bpmn8.png)
+![screencCapture](./public/image/screencCapture.png)
 
 
 
@@ -15,7 +15,7 @@
 将项目克隆至本地:
 
 ```
-git clone git@github.com:LinDaiDai/bpmn-vue-basic.git
+git clone git@github.com:LinDaiDai/bpmn-vue-properties-panel.git
 ```
 
 安装依赖:

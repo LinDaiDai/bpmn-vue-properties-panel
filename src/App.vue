@@ -2,9 +2,15 @@
   <div id="app">
     <div class="content">
       <ul class="router_ul">
-        <router-link v-for="link in links" :key="link.to" tag="li" active-class="activeClass" :to="link.to">{{ link.title }}</router-link>
+        <router-link
+          v-for="link in links"
+          :key="link.to"
+          tag="li"
+          active-class="activeClass"
+          :to="link.to"
+        >{{ link.title }}</router-link>
       </ul>
-       <router-view></router-view>
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -13,10 +19,11 @@
 export default {
   name: 'app',
   components: {},
-  data () {
+  data() {
     return {
       links: [
-        { to: '/properties-panel-extension', title: 'properties-panel-extension' }
+        { to: '/properties-panel-extension', title: 'properties-panel-extension' },
+        { to: '/custom-properties-panel', title: 'custom-properties-panel' }
       ]
     }
   }
@@ -44,15 +51,15 @@ body {
 .router_ul li {
   margin-left: 10px;
   padding: 5px 10px;
-  font-size: 14px;  
+  font-size: 14px;
   border-radius: 5px;
   border: 1px solid #ccc;
   cursor: pointer;
   transition: all 0.3s;
 }
 .router_ul li.activeClass {
-    background: #4d90fe;
-    color: #fff;
-    border: none;
+  background: #4d90fe;
+  color: #fff;
+  border: none;
 }
 </style>

@@ -1,0 +1,99 @@
+.bpp-properties-panel {
+    background-color: rgba(27, 31, 35, .05);
+    border-color: rgba(0, 0, 0, 0.09);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+.bpp-properties-panel label {
+    color: #0e88eb;
+}
+
+.bpp-properties-header {
+    color: #fff;
+}
+
+.bpp-properties-header>.label {
+    color: #0e88eb;
+    font-size: 16px;
+}
+
+.bpp-field-description {
+    font-size: 12px;
+}
+
+ul.bpp-properties-tabs-links>li.bpp-active a {
+    border-top: 2px solid #0e88eb;
+    color: #0e88eb;
+}
+
+ul.bpp-properties-tabs-links>li>a {
+    border: 1px solid #0e88eb;
+    border-radius: 2px 2px 0 0;
+}
+
+.bpp-properties-group:hover>.group-toggle {
+    background-color: #0e88eb;
+}
+
+.bpp-properties-group>.group-label {
+    font-size: 16px;
+    color: #0e88eb;
+    border-bottom: 2px solid #0e88eb;
+    font-style: normal;
+}
+
+.bpp-properties-panel [type=text],
+.bpp-properties-panel [contenteditable],
+.bpp-properties-panel textarea,
+.bpp-properties-panel select {
+    width: 85%;
+    padding: 4px 11px;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.bpp-properties-panel input:focus,
+.bpp-properties-panel button:focus,
+.bpp-properties-panel textarea:focus,
+.bpp-properties-panel [contenteditable]:focus {
+    border-color: #0e88eb;
+    box-shadow: 0 0 1px 2px #4d90fe45;
+}
+
+.bpp-properties-panel [contenteditable] {
+    margin: 0 auto;
+}
+
+.bpp-properties-panel button {
+    height: 15px;
+    width: 14px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0;
+    color: #fff;
+}
+
+.bpp-textfield .clear {
+    top: 50%;
+    right: 11px;
+    transform: translateY(-50%);
+    background-color: #ccc;
+}
+
+.bpp-properties-panel button:hover {
+    background: #0e88eb;
+    color: #fff;
+}
+
+.bpp-properties-tab-bar {
+    border-color: #0e88eb;
+}
+
+.bpp-properties-group+.bpp-properties-group {
+    border-top: 1px dotted #0e88eb;
+}

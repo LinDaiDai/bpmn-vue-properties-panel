@@ -10,6 +10,11 @@ const routes = [{
         path: '/properties-panel-extension',
         component: () =>
             import ('./../components/properties-panel-extension')
+    },
+    {
+        path: '/custom-properties-panel',
+        component: () =>
+            import ('./../components/custom-properties-panel')
     }
 ]
 

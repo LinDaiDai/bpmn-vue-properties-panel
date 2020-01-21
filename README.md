@@ -1,10 +1,18 @@
-# bpmn-vue-basic
+# Bpmn-vue-properties-panel
 
 ## 项目描述
 
-此项目为[《全网最详bpmn.js教材-properties-panel篇(上)》](https://juejin.im/post/5e1adffbe51d45023129aef5)中的教材案例.
+此项目为以下教材中的教材案例.
 
-项目截图:
+- [《properties篇》](https://github.com/LinDaiDai/bpmn-chinese-document/tree/master/LinDaiDai/全网最详bpmn.js教材-properties篇.md)🔥🔥🔥
+
+- [《properties-panel篇(上)》](https://github.com/LinDaiDai/bpmn-chinese-document/tree/master/LinDaiDai/全网最详bpmn.js教材-properties-panel篇(上).md)🔥🔥🔥
+
+- [《properties-panel篇(下)》](https://github.com/LinDaiDai/bpmn-chinese-document/tree/master/LinDaiDai/全网最详bpmn.js教材-properties-panel篇(下).md)🔥🔥🔥
+
+
+
+## 项目截图:
 
 ![screencCapture](./public/image/screencCapture.png)
 

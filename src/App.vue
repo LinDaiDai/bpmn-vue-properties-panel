@@ -23,7 +23,8 @@ export default {
     return {
       links: [
         { to: '/properties-panel-extension', title: 'properties-panel-extension' },
-        { to: '/custom-properties-panel', title: 'custom-properties-panel' }
+        { to: '/custom-properties-panel', title: 'custom-properties-panel' },
+        { to: '/bpmn-js-in-color', title: 'bpmn-js-in-color' }
       ]
     }
   }

@@ -1,7 +1,7 @@
 <template>
   <div class="custom-properties-panel">
-    <div class="empty" v-if="selectedElements.length<=0">请选择一个元素</div>
-    <div class="empty" v-else-if="selectedElements.length>1">只能选择一个元素</div>
+    <div class="empty" v-if="selectedElements.length <= 0">请选择一个元素</div>
+    <div class="empty" v-else-if="selectedElements.length > 1">只能选择一个元素</div>
     <div v-else>
       <fieldset class="element-item">
         <label>id</label>
@@ -9,34 +9,26 @@
       </fieldset>
       <fieldset class="element-item">
         <label>name</label>
-        <input :value="element.name" @change="(event) => changeField(event, 'name')" />
+        <input :value="element.name" @change="event => changeField(event, 'name')" />
       </fieldset>
       <fieldset class="element-item">
         <label>customProps</label>
-        <input :value="element.customProps" @change="(event) => changeField(event, 'customProps')" />
+        <input :value="element.customProps" @change="event => changeField(event, 'customProps')" />
       </fieldset>
       <fieldset class="element-item">
         <label>节点颜色</label>
-        <input type="color" :value="element.color" @change="(event) => changeField(event, 'color')" />
+        <input type="color" :value="element.color" @change="event => changeField(event, 'color')" />
       </fieldset>
       <fieldset class="element-item" v-if="isEvent">
         <label>修改event节点类型</label>
         <select @change="changeEventType" :value="eventType">
-          <option
-            v-for="option in eventTypes"
-            :key="option.value"
-            :value="option.value"
-          >{{ option.label }}</option>
+          <option v-for="option in eventTypes" :key="option.value" :value="option.value">{{ option.label }}</option>
         </select>
       </fieldset>
       <fieldset class="element-item" v-if="isTask">
         <label>修改Task节点类型</label>
         <select @change="changeTaskType" :value="taskType">
-          <option
-            v-for="option in taskTypes"
-            :key="option.value"
-            :value="option.value"
-          >{{ option.label }}</option>
+          <option v-for="option in taskTypes" :key="option.value" :value="option.value">{{ option.label }}</option>
         </select>
       </fieldset>
     </div>
@@ -103,12 +95,14 @@ export default {
       const { element } = this
       if (element) {
         const { type, businessObject } = element
+        const { name } = businessObject
         if (this.verifyIsEvent(type)) {
           this.eventType = businessObject.eventDefinitions ? businessObject.eventDefinitions[0]['$type'] : ''
           console.log(this.eventType)
         } else if (this.verifyIsTask(type)) {
           this.taskType = type
         }
+        element['name'] = name
       }
     },
     verifyIsEvent(type) {

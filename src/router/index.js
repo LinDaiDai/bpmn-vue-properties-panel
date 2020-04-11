@@ -17,9 +17,9 @@ const routes = [{
             import ('./../components/custom-properties-panel')
     },
     {
-        path: '/bpmn-js-in-color',
+        path: '/custom-color',
         component: () =>
-            import ('./../components/bpmn-js-in-color')
+            import ('./../components/custom-color')
     }
 ]
 

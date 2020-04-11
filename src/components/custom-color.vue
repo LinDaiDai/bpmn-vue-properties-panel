@@ -1,21 +1,15 @@
 <template>
-  <div class="containers" ref="content">
+  <div class="containers bpmn-color" ref="content">
     <div class="canvas" ref="canvas"></div>
-    <div id="js-properties-panel" class="panel"></div>
   </div>
 </template>
 
 <script>
 // 引入相关的依赖
-// import BpmnViewer from 'bpmn-js'
 import BpmnModeler from 'bpmn-js/lib/Modeler'
-// 原有的 properties-panel 这个框
-import propertiesPanelModule from 'bpmn-js-properties-panel'
-import camundaModdleDescriptor from 'camunda-bpmn-moddle/resources/camunda'
-// 自定义的 properties-panel内容
-import propertiesProviderModule from './properties-panel-extension/provider/authority'
-import authorityModdleDescriptor from './properties-panel-extension/descriptors/authority'
 import { xmlStr } from '../mock/xmlStr'
+// 引入自定义的一些module
+import customModule from './custom'
 export default {
   name: '',
   components: {},
@@ -48,15 +42,8 @@ export default {
           parent: '#js-properties-panel'
         },
         additionalModules: [
-          // 右边的工具栏(固定引入)
-          propertiesPanelModule,
-          // 自定义右边工作栏的内容
-          propertiesProviderModule
-        ],
-        moddleExtensions: {
-          // camunda: camundaModdleDescriptor,
-          authority: authorityModdleDescriptor
-        }
+          customModule
+        ]
       })
       this.createNewDiagram()
     },
@@ -108,5 +95,8 @@ export default {
   right: 0;
   top: 0;
   width: 300px;
+}
+.bpmn-icon-start-event-none:before {
+  color: red;
 }
 </style>

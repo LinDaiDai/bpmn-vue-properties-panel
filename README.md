@@ -10,6 +10,7 @@
 
 - [《properties-panel篇(下)》](https://github.com/LinDaiDai/bpmn-chinese-document/tree/master/LinDaiDai/全网最详bpmn.js教材-properties-panel篇(下).md)🔥🔥🔥
 
+- [《Color篇》](https://github.com/LinDaiDai/bpmn-chinese-document/tree/master/LinDaiDai/全网最详bpmn.js教材-Color篇.md)🔥🔥🔥
 
 
 ## 项目截图:

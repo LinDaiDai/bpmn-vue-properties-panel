@@ -1,0 +1,9 @@
+.bpmn-color .bpmn-icon-start-event-none:before {
+  color: #12c2e9;
+}
+.bpmn-color .bpmn-icon-task:before {
+  color: #c471ed;
+}
+.bpmn-color .bpmn-icon-end-event-none:before {
+  color: #f64f59;
+}
